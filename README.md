@@ -1,47 +1,27 @@
-# CS105-Project: Scraping and API
+# CS105-Project: Stock Market Prediction
 
-###### scraper.ipynb
+The goal of this project is to scrape website data, clean scraped data, perform exploratory data analysis 
+through visualizations, and finally, use machine learning algorithms to make predictions from collected data.
 
-Scrapes stockmonitor.com for top performing 100 Nasdaq stocks (intraday). 
-The scraper finds price change, symbol, name, price, volume, high, low. Data is cleaned and
-saved to a csv file.
+The datasets consist of live and historic metrics for the top 100 stocks on the Nasdaq (intraday). The
+machine learning algorithms predict the best 5 stocks to buy based on historic performance.
 
-###### API_yahoo.ipynb
+Note: This project is an academic exercise and not intended to be used in actual market trading.
 
-The API is through YahooFinancials. The API code pulls the same category of data as the scraper 
-(and much more) but stock performance data is historical based on predetermined date range. However, 
-live data may also be accessed through the API if desired. Data is saved to a csv file.
+The project was completed in 3 phases:
 
-Merging these two datasets, we can compare historical and live stock performance for the top 100 
-performing stocks on the Nasdaq-100(ndx) index.
+###### [Phase 1: Scraper and API](https://github.com/CS-UCR/cs105-prj-phase3-jellybean/tree/master/Phase%201)
+
+###### [Phase 2: Scrape, Clean, and EDA](https://github.com/CS-UCR/cs105-prj-phase3-jellybean/tree/master/Phase%202)
+
+###### [Phase 3: Machine Learning for Stock Prediction](https://github.com/CS-UCR/cs105-prj-phase3-jellybean/tree/master/Phase%203)
 
 ## Installation
-
-Code is ready to run in jupyter notebook. 
 
 'pip install' needed dependencies, or if using anaconda, 
 install libraries through navigator/profile terminal.
 
-###### scraper.ipynb
-
-requests,
-pandas,
-bs4
-
-###### API_yahoo.ipynb
-
-yahoofinancials,
-pandas,
-json
-
 ## Usage
 
-scraper.ipynb - run in jupyter notebook
+Jupyter Lab recommended
 
-API_yahoo.ipynb - run in jupyter notebook
-
-## Upcoming Work
-
-Use machine learning algorithm to infer the best stock purchase on the Nasdaq-100 intraday. 
-The model will train on historical data where the best performer of each day is known, and then
-the model will infer from live stock data the best stock buy of the day.
